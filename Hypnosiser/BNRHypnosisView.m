@@ -10,12 +10,19 @@
 
 @implementation BNRHypnosisView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+-(void) drawRect:(CGRect)rect {
+        CGRect bounds = self.bounds;
+        
+        CGPoint center;
+        
+        center.x = bounds.origin.x + bounds.size.width / 2;
+        center.y = bounds.origin.y + bounds.size.height / 2;
+        
+        float radius = (MIN(bounds.size.height, bounds.size.width) / 2);
+        
+        
+        
 }
-*/
 
 @end
